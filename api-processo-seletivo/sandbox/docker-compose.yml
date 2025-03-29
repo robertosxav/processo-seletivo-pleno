@@ -54,9 +54,9 @@ services:
       S3_ACCESS_KEY: admin
       S3_ACCESS_SECRET: seletivo123@
     depends_on:
-      db-roberto:
+      db-roberto-8305:
         condition: service_healthy
-      minio-roberto:
+      minio-roberto-8305:
         condition: service_started
     networks:
       - mynetwork
